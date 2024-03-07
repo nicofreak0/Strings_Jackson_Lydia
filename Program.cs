@@ -14,13 +14,19 @@
             // prints results to console
             Console.WriteLine($"\n{myChar} is a letter: {isLetter}");
 
+            // asks the user a question and saves response to a variable, sentence
             Console.WriteLine("Why do you like video games?");
             string sentence = Console.ReadLine();
 
+            // checks if the word is in the sentence
             Console.WriteLine("Enter a word.");
             string word = Console.ReadLine();
 
+            //checks if the word is in the sentence
             bool isIn = sentence.Contains(word);
+
+            // prints if the word is in the sentence
+            Console.WriteLine($"{word} exists in {sentence}, {isIn}!");
 
         }
     }
